@@ -20,3 +20,6 @@ def user_msg():
       print("Slow down!")
     elif msg[x] in noun:
       print("Someone's full of themselves.")
+    else:
+      with open("words.txt","a") as fout:
+        fout.write(msg[x] + "\n")
