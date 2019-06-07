@@ -10,16 +10,30 @@ prepositon = []
 conjunction = []
 interjection = []
 
+word_check = {}
+
 #function to capture user input and split to parts
 def user_msg():
   msg = input("Hi!").lower().split()
   msg_length = len(msg)
 
   for x in range(msg_length):
-    if msg[x] in verbs:
+    if msg[x] in verb:
       print("Slow down!")
+    elif msg[x] in adverb:
+      print("")
     elif msg[x] in noun:
       print("Someone's full of themselves.")
+    elif msg[x] in pronoun:
+      print("")
+    elif msg[x] in adjective:
+      print("")
+    elif msg[x] in preposition:
+      print("")
+    elif msg[x] in conjunction:
+      print("")
+    elif msg[x] in interjection:
+      print("")
     else:
       with open("words.txt","a") as fout:
         fout.write(msg[x] + "\n")
