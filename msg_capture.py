@@ -9,3 +9,8 @@ adjective = []
 prepositon = []
 conjunction = []
 interjection = []
+
+#function to capture user input and split to parts
+def user_msg():
+  msg = input("Hi!").lower().split()
+  msg_length = len(msg)
