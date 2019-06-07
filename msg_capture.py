@@ -39,7 +39,7 @@ def user_msg():
         fout.write(msg[x] + "\n")
 
   with open("words.txt","a") as fout:
-        fout.write("\n\n")
+    fout.write("\n\n")
 
 user_msg()
 
