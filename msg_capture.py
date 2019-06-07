@@ -14,3 +14,9 @@ interjection = []
 def user_msg():
   msg = input("Hi!").lower().split()
   msg_length = len(msg)
+
+  for x in range(msg_length):
+    if msg[x] in verbs:
+      print("Slow down!")
+    elif msg[x] in noun:
+      print("Someone's full of themselves.")
