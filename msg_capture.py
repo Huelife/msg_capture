@@ -6,7 +6,7 @@ adverb = []
 noun = []
 pronoun = []
 adjective = []
-prepositon = []
+preposition = []
 conjunction = []
 interjection = []
 
