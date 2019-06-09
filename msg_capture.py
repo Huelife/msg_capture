@@ -12,12 +12,13 @@ interjection = []
 
 word_check = {}
 
-#function to capture user input and split to parts
+#function to capture and split user input, and decide what to do with it
 def user_msg():
   msg = input("Hi!").lower().split()
   msg_length = len(msg)
   y = 0
-
+  
+  #checking user input, creating reply, and exporting unknown strings
   for x in range(msg_length):
     if msg[y] in verb:
       print("Slow down!")
