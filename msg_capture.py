@@ -21,21 +21,21 @@ def user_msg():
   #checking user input, creating reply, and exporting unknown strings
   for x in range(msg_length):
     if msg[y] in verb:
-      print("Slow down!")
+      reply = "Slow down!"
     elif msg[y] in adverb:
-      print("")
+      reply = ""
     elif msg[y] in noun:
-      print("Someone's full of themselves.")
+      reply = "Someone's full of themselves."
     elif msg[y] in pronoun:
-      print("")
+      reply = ""
     elif msg[y] in adjective:
-      print("")
+      reply = ""
     elif msg[y] in preposition:
-      print("")
+      reply = ""
     elif msg[y] in conjunction:
-      print("")
+      reply = ""
     elif msg[y] in interjection:
-      print("")
+      reply = ""
     else:
       with open("words.txt","a") as fout:
         fout.write(msg[y] + "\n")
@@ -43,5 +43,7 @@ def user_msg():
 
   with open("words.txt","a") as fout:
     fout.write("\n")
+    
+  print(reply)
 
 user_msg()
