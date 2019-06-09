@@ -16,27 +16,29 @@ word_check = {}
 def user_msg():
   msg = input("Hi!").lower().split()
   msg_length = len(msg)
+  y = 0
 
   for x in range(msg_length):
-    if msg[x] in verb:
+    if msg[y] in verb:
       print("Slow down!")
-    elif msg[x] in adverb:
+    elif msg[y] in adverb:
       print("")
-    elif msg[x] in noun:
+    elif msg[y] in noun:
       print("Someone's full of themselves.")
-    elif msg[x] in pronoun:
+    elif msg[y] in pronoun:
       print("")
-    elif msg[x] in adjective:
+    elif msg[y] in adjective:
       print("")
-    elif msg[x] in preposition:
+    elif msg[y] in preposition:
       print("")
-    elif msg[x] in conjunction:
+    elif msg[y] in conjunction:
       print("")
-    elif msg[x] in interjection:
+    elif msg[y] in interjection:
       print("")
     else:
       with open("words.txt","a") as fout:
-        fout.write(msg[x] + "\n")
+        fout.write(msg[y] + "\n")
+    y += 1
 
   with open("words.txt","a") as fout:
     fout.write("\n")
