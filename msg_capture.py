@@ -35,11 +35,11 @@ def user_msg():
     elif msg[y] in noun:
       reply = "Someone's full of themselves."
     elif msg[y] in pronoun:
-      reply = ""
+      reply = "Does {} have a name?".format(msg[y])
     elif msg[y] in adjective:
       reply = ""
     elif msg[y] in preposition:
-      reply = ""
+      reply = "{} where?".format(msg[y])
     elif msg[y] in conjunction:
       reply = ""
     elif msg[y] in interjection:
