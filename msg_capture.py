@@ -2,12 +2,10 @@
 
 #sentence parts variables
 verb = ["run","walk","jog","sprint"]
-adverb = []
 noun = ["i","my","mine","me","i'm","im"]
 pronoun = ["he","him","his","her","she","them","there","it","you","your",
            "they","we","us","our","there","theyre","they're","mines","mine",
            "ours","yours","theres","there's","theirs"]
-adjective = []
 preposition = ["aboard","behind","during","about","below","except","above",
                "beneath","for","across","beside","from","after","besides",
                "in","against","between","inside","along","beyond","into",
@@ -15,9 +13,11 @@ preposition = ["aboard","behind","during","about","below","except","above",
                "of","before","down","off","on","throughout","until","out",
                "till","up","over","to","upon","past","toward","with","since",
                "under","within","through","underneath","without","til"]
+
+adverb = []
+adjective = []
 conjunction = []
 interjection = []
-
 word_check = {}
 
 #function to capture and split user input, and decide what to do with it
