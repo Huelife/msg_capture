@@ -3,7 +3,7 @@
 #sentence parts variables
 verb = ["run","walk","jog","sprint"]
 adverb = []
-noun = []
+noun = ["i","my","mine","me","i'm","im"]
 pronoun = ["he","him","his","her","she","them","there","it","you","your",
            "they","we","us","our","there","theyre","they're","mines","mine",
            "ours","yours","theres","there's","theirs"]
