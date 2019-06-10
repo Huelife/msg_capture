@@ -14,6 +14,7 @@ preposition = ["aboard","behind","during","about","below","except","above",
                "till","up","over","to","upon","past","toward","with","since",
                "under","within","through","underneath","without","til"]
 greet = ["hi","hey","yo","hello","sup","greetings"]
+greet_day = ["morning","afternoon","evening"]
 
 adverb = []
 adjective = []
@@ -31,6 +32,8 @@ def user_msg():
   for x in range(msg_length):
     if msg[y] in greet_day:
       reply = msg[y] + "!"
+    elif msg[y] in greet:
+      reply = "Hello!"
     elif msg[y] in verb:
       reply = "Slow down!"
     elif msg[y] in adverb:
