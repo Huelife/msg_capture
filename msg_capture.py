@@ -4,7 +4,9 @@
 verb = ["run","walk","jog","sprint"]
 adverb = []
 noun = []
-pronoun = []
+pronoun = ["he","him","his","her","she","them","there","it","you","your",
+           "they","we","us","our","there","theyre","they're","mines","mine",
+           "ours","yours","theres","there's","theirs"]
 adjective = []
 preposition = ["aboard","behind","during","about","below","except","above",
                "beneath","for","across","beside","from","after","besides",
