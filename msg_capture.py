@@ -13,6 +13,7 @@ preposition = ["aboard","behind","during","about","below","except","above",
                "of","before","down","off","on","throughout","until","out",
                "till","up","over","to","upon","past","toward","with","since",
                "under","within","through","underneath","without","til"]
+greet = ["hi","hey","yo","hello","sup","greetings"]
 
 adverb = []
 adjective = []
@@ -28,7 +29,9 @@ def user_msg():
   
   #checking user input, creating reply, and exporting unknown strings
   for x in range(msg_length):
-    if msg[y] in verb:
+    if msg[y] in greet_day:
+      reply = msg[y] + "!"
+    elif msg[y] in verb:
       reply = "Slow down!"
     elif msg[y] in adverb:
       reply = ""
