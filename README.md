@@ -1,2 +1,3 @@
 # msg_capture
-Replies to user input based on words used and stores unknown words
+Module that identifies user input, replies, and stores unknown strings
+---------------------------------
